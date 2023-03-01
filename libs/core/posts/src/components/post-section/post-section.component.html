@@ -12,7 +12,10 @@
       </div>
       <div class="posts">
         <div class="center" *ngFor="let item of posts$ | async">
-        <akur8-posts (cardClick)="cardClick($event)" (deleteClick)="deletePost($event)" [selectedPost]="selected && selected === item?.id ?true:false" [data]="item"/>
+         <akur8-posts (cardClick)="cardClick($event)" (deleteClick)="deletePost($event)" [selectedPost]="selected && selected === item?.id ?true:false" [data]="item"/>
+        </div>
+        <div *ngIf="(posts$ | async).length === 0" class="center">
+          No data available
         </div>
       </div>
     </div>

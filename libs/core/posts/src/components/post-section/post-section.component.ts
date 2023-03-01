@@ -3,14 +3,14 @@
   import { PostListComponent } from '../post-list/post-list.component';
   import { FormComponent } from '../form/form.component';
   import { PostComponent } from '@akur8/shared/components';
-  import { AsyncPipe, NgFor } from '@angular/common';
+  import { AsyncPipe, NgFor, NgIf } from '@angular/common';
   import { Post, PostId } from '../../interfaces/post.interface';
 import { Subject, takeUntil } from 'rxjs';
 
   @Component({
     selector: 'akur8-post-section',
     standalone: true,
-    imports: [PostListComponent,FormComponent,PostComponent,NgFor,AsyncPipe],
+    imports: [PostListComponent,FormComponent,PostComponent,NgIf,NgFor,AsyncPipe],
     templateUrl: './post-section.component.html',
     styleUrls: ['./post-section.component.css'],
   })
