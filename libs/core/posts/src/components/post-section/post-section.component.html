@@ -7,17 +7,7 @@
       <akur8-form/>
     </div>
     <div class="postsWrapper">
-      <div class="title">
-        Posts detail list
-      </div>
-      <div class="posts">
-        <div class="center" *ngFor="let item of posts$ | async">
-         <akur8-posts (cardClick)="cardClick($event)" (deleteClick)="deletePost($event)" [selectedPost]="selected && selected === item?.id ?true:false" [data]="item"/>
-        </div>
-        <div *ngIf="(posts$ | async).length === 0" class="center">
-          No data available
-        </div>
-      </div>
+      <akur8-view-posts [selected]="selected" [posts]="posts$" (deleteClick)="deletePost($event)" (cardClick)="cardClick($event)"/>
     </div>
   </div>
   <div class="right">

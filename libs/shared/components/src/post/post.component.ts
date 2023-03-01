@@ -2,7 +2,7 @@ import { Component, ElementRef, EventEmitter, Input, Output, ViewChild, inject }
 import { NgClass } from '@angular/common';
 
 @Component({
-  selector: 'akur8-posts',
+  selector: 'akur8-post',
   standalone: true,
   imports: [NgClass],
   template: `
@@ -54,8 +54,8 @@ export class PostComponent {
   selected !: boolean;
   @Input() set selectedPost(value: boolean){
     this.selected = value;
-    if(this.post){
-      setTimeout(() => this.focus(),10)
+    if(this.post && value){
+      setTimeout(() => this.focus(),100)
     }
   }
   @ViewChild('post') post!: ElementRef;

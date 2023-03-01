@@ -30,8 +30,8 @@ export class CardComponent {
   @ViewChild('card') card!: ElementRef;
   @Input() set selectedCard(value: boolean){
     this.selected = value;
-    if(this.card)
-      setTimeout(() => this.focus(),10)
+    if(this.card && value)
+      setTimeout(() => this.focus(),100)
   }
   @Output() cardClick : EventEmitter<any> = new EventEmitter();
 

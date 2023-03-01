@@ -7,7 +7,16 @@ import { RouterOutlet } from '@angular/router';
   selector: 'akur8-dashboard',
   standalone: true,
   imports: [HeaderComponent, FooterComponent, RouterOutlet],
-  template: `<div class="header"><akur8-header/></div><section class="section"><router-outlet/></section><div class="footer"><akur8-footer/></div>`,
+  template: `
+  <div class="header">
+    <akur8-header/>
+  </div>
+  <section class="section">
+   <router-outlet/>
+  </section>
+  <div class="footer">
+    <akur8-footer/>
+  </div>`,
   styles: [
     `
     .header,.footer{
