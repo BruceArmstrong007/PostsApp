@@ -12,12 +12,17 @@ import { EventEmitter } from '@angular/core';
   template: `
     <akur8-card [selectedCard]="(selectedPost && selectedPost === item?.id)?true:false" *ngFor="let item of (data | async | nameFilter : filter)" [item]="item" (cardClick)="cardClick.emit($event)"></akur8-card>
     <ng-container *ngIf="(data | async | nameFilter : filter).length === 0">
-      <div class="center">
+      <div class="style center">
         No data available
       </div>
     </ng-container>
   `,
-  styles: [` `],
+  styles: [`
+    .style{
+        width: 100%;
+        height: 100%;
+    }
+  `],
 })
 export class ListComponent {
   @Input() filter!: string;

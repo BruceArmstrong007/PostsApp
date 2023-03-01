@@ -54,6 +54,8 @@ import { Observable } from 'rxjs';
   }
   .cards{
     padding: 5px;
+    width: 100%;
+    height: 100%;
   }
 `],
 })
