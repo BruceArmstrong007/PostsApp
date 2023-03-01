@@ -55,7 +55,7 @@ export class PostComponent {
   @Input() set selectedPost(value: boolean){
     this.selected = value;
     if(this.post && value){
-      setTimeout(() => this.focus(),100)
+      setTimeout(() => this.focus(),500)
     }
   }
   @ViewChild('post') post!: ElementRef;
