@@ -1,0 +1,15 @@
+<form class="form" [formGroup]="postForm" (ngSubmit)="addPost()">
+  <div class="title">Create a new post</div>
+  <div class="inputWrapper">
+    <label class="label">Name</label>
+    <input class="input" id="name" type="text" formControlName="name">
+  </div>
+  <div class="inputWrapper">
+    <label class="label">Content</label>
+    <textarea class="input" rows="3" id="content" type="text" formControlName="content"></textarea>
+  </div>
+  <div class="buttonWrapper">
+    <button [disabled]="isReset ? true : false" type="reset">Reset</button>
+    <button [disabled]="isSubmit">Save</button>
+  </div>
+</form>

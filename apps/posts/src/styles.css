@@ -1,0 +1,46 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar:hover  {
+  width: 3px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-track:hover {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 2px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(69, 69, 69);
+  border-radius: 2px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(99, 99, 99);
+}
+
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="left">
+    <akur8-post-list [type]="'Post'" [data]="posts$" [selectedPost]="selected" (cardClick)="cardClick($event)"/>
+  </div>
+  <div class="content">
+    <div class="formWrapper center">
+      <akur8-form/>
+    </div>
+    <div class="postsWrapper">
+      <div class="title">
+        Posts detail list
+      </div>
+      <div class="posts">
+        <div class="center" *ngFor="let item of posts$ | async">
+        <akur8-posts (cardClick)="cardClick($event)" (deleteClick)="deletePost($event)" [selectedPost]="selected && selected === item?.id ?true:false" [data]="item"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <akur8-post-list [type]="'Post event'" [data]="postEvents$" (cardClick)="cardClick($event)"/>
+  </div>
+  </div>
