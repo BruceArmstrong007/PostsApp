@@ -31,7 +31,7 @@ export class CardComponent {
   @Input() set selectedCard(value: boolean){
     this.selected = value;
     if(this.card)
-     this.focus();
+      setTimeout(() => this.focus(),10)
   }
   @Output() cardClick : EventEmitter<any> = new EventEmitter();
 
