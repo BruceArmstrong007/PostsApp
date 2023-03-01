@@ -2,7 +2,10 @@
   "name": "akur8",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve": "npx nx serve posts",
+    "build": "npx nx build posts"
+  },
   "private": true,
   "devDependencies": {
     "@angular-devkit/build-angular": "~15.1.0",
