@@ -1,9 +1,0 @@
-<div class="card" #post [ngClass]="{'red': selected}" (click)="cardClick.emit(data?.id)">
-  <div class="titleWrapper">
-    <div class="title">{{data?.name}}</div>
-    <div class="close" (click)="deleteClick.emit(data)">X</div>
-  </div>
-  <div class="description">
-    {{data?.content}}
-  </div>
-</div>

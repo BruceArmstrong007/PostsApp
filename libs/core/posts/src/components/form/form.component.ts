@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormControl, Validators } from '@angular/forms';
-import { PostsService } from '../../services/posts.service';
+import { PostService } from '../../services/post.service';
 
 @Component({
   selector: 'akur8-form',
@@ -14,7 +14,7 @@ export class FormComponent {
     name: new FormControl('', Validators.required),
     content: new FormControl('', Validators.required),
   });
-  postsService = inject(PostsService);
+  postsService = inject(PostService);
   addPost(){
     if(!this.postForm.valid){
       return;

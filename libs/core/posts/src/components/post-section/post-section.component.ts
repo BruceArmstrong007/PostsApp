@@ -1,21 +1,21 @@
   import { Component, inject } from '@angular/core';
-  import { PostsService } from '../../services/posts.service';
+  import { PostService } from '../../services/post.service';
   import { PostListComponent } from '../post-list/post-list.component';
-  import {FormComponent} from '../form/form.component';
-  import {PostsComponent} from '../posts/posts.component';
+  import { FormComponent } from '../form/form.component';
+  import { PostComponent } from '@akur8/shared/components';
   import { AsyncPipe, NgFor } from '@angular/common';
   import { Post, PostId } from '../../interfaces/post.interface';
 import { Subject, takeUntil } from 'rxjs';
 
   @Component({
-    selector: 'akur8-posts-section',
+    selector: 'akur8-post-section',
     standalone: true,
-    imports: [PostListComponent,FormComponent,PostsComponent,NgFor,AsyncPipe],
-    templateUrl: './posts-section.component.html',
-    styleUrls: ['./posts-section.component.css'],
+    imports: [PostListComponent,FormComponent,PostComponent,NgFor,AsyncPipe],
+    templateUrl: './post-section.component.html',
+    styleUrls: ['./post-section.component.css'],
   })
-  export class PostsSectionComponent {
-    postService = inject(PostsService);
+  export class PostSectionComponent {
+    postService = inject(PostService);
     posts$ = this.postService?.posts$.asObservable();
     postEvents$ = this.postService?.postEvents$.asObservable();
     destroy$ : Subject<any> = new Subject();

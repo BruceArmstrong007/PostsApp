@@ -3,6 +3,6 @@ import { Route } from '@angular/router';
 export const dashboardRoutes: Route[] = [
   {
     path:'',
-    loadComponent: () => import('../components/posts-section/posts-section.component').then(m => m.PostsSectionComponent),
+    loadComponent: () => import('../components/post-section/post-section.component').then(m => m.PostSectionComponent),
   }
 ];

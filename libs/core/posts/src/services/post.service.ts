@@ -6,7 +6,7 @@ import { Post, PostId } from '../interfaces/post.interface';
 @Injectable({
   providedIn: 'root'
 })
-export class PostsService {
+export class PostService {
 
   posts$ : BehaviorSubject<any> = new BehaviorSubject([]);
   postEvents$ : BehaviorSubject<any> = new BehaviorSubject([]);
