@@ -48,6 +48,13 @@
           "libs/shared/services/**/*.html"
         ]
       }
+    },
+    "component-test": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "libs/shared/cypress.config.ts",
+        "testingType": "component"
+      }
     }
   },
   "tags": ["scope:akur8", "type:shared"]

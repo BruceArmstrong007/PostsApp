@@ -8,10 +8,19 @@
     "types": []
   },
   "exclude": [
-    "components/src/test-setup.tsst-setup.ts",
-    "components/src/**/*.spec.ts*/*.spec.ts",
+    "components/src/test-setup.ts",
+    "components/src/**/*.spec.ts",
     "jest.config.ts",
-    "components/src/**/*.test.ts*/*.test.ts"
+    "components/src/**/*.test.ts",
+    "cypress/**/*",
+    "cypress.config.ts",
+    "**/*.cy.ts",
+    "**/*.cy.js",
+    "**/*.cy.tsx",
+    "**/*.cy.jsx"
   ],
-  "include": ["components/src/**/*.tssrc/**/*.ts"]
+  "include": [
+    "components/src/**/*.ts",
+    "src/**/*.ts"
+  ]
 }

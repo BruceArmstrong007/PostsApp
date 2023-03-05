@@ -15,6 +15,7 @@ export class FormComponent {
     content: new FormControl('', Validators.required),
   });
   postsService = inject(PostService);
+
   addPost(){
     if(!this.postForm.valid){
       return;

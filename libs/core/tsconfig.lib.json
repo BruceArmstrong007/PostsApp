@@ -11,7 +11,17 @@
     "src/test-setup.ts",
     "src/**/*.spec.ts",
     "jest.config.ts",
-    "src/**/*.test.ts"
+    "src/**/*.test.ts",
+    "cypress/**/*",
+    "cypress.config.ts",
+    "**/*.cy.ts",
+    "**/*.cy.js",
+    "**/*.cy.tsx",
+    "**/*.cy.jsx"
   ],
-  "include": ["src/**/*.ts", "posts/src/services/post.service.ts"]
+  "include": [
+    "src/**/*.ts",
+    "posts/src/**/*.ts",
+    "posts/src/**/**/*.ts"
+  ]
 }

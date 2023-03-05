@@ -9,7 +9,7 @@
     <textarea class="input" rows="3" id="content" type="text" formControlName="content"></textarea>
   </div>
   <div class="buttonWrapper">
-    <button [disabled]="isReset ? true : false" type="reset">Reset</button>
-    <button [disabled]="isSubmit">Save</button>
+    <button id="reset" [disabled]="isReset ? true : false" type="reset">Reset</button>
+    <button id="save" [disabled]="isSubmit">Save</button>
   </div>
 </form>

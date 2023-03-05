@@ -6,7 +6,7 @@ import { NgClass } from '@angular/common';
   standalone: true,
   imports: [NgClass],
   template: `
-  <div class="card" #post [ngClass]="{'red': selected}" (click)="cardClick.emit(data?.id)">
+  <div [id]="data?.id" class="card" #post [ngClass]="{'red': selected}" (click)="cardClick.emit(data?.id)">
     <div class="titleWrapper">
       <div class="title">{{data?.name}}</div>
       <div class="close" (click)="deleteClick.emit(data)">X</div>

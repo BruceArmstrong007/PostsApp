@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'akur8-footer',
   standalone: true,
   imports: [],
-  template: `<footer class="style center"><h2>Page Footer</h2></footer> `,
+  template: `<footer class="style center"><h2 id="footer">Page Footer</h2></footer> `,
   styles: [
     `.style{
       position : fixed;

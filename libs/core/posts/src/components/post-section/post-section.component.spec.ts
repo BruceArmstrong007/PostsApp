@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { PostSectionComponent } from './post-section.component';
 
 describe('PostSectionComponent', () => {
