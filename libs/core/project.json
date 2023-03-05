@@ -46,8 +46,8 @@
       ],
       "options": {
         "lintFilePatterns": [
-          "libs/core/**/*.ts",
-          "libs/core/**/*.html"
+          "libs/core/**/**/*.ts",
+          "libs/core/**/**/*.html"
         ]
       }
     },

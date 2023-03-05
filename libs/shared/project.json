@@ -53,9 +53,14 @@
       "executor": "@nrwl/cypress:cypress",
       "options": {
         "cypressConfig": "libs/shared/cypress.config.ts",
-        "testingType": "component"
+        "testingType": "component",
+        "skipServe": true,
+        "devServerTarget": "shared:build"
       }
     }
   },
-  "tags": ["scope:akur8", "type:shared"]
+  "tags": [
+    "scope:akur8",
+    "type:shared"
+  ]
 }
