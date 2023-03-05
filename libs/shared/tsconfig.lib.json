@@ -12,12 +12,12 @@
     "components/src/**/*.spec.ts",
     "jest.config.ts",
     "components/src/**/*.test.ts",
-    "cypress/**/*",
-    "cypress.config.ts",
     "**/*.cy.ts",
     "**/*.cy.js",
     "**/*.cy.tsx",
-    "**/*.cy.jsx"
+    "**/*.cy.jsx",
+    "cypress/**/*",
+    "cypress.config.ts"
   ],
   "include": [
     "components/src/**/*.ts",

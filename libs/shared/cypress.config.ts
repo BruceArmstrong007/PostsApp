@@ -5,7 +5,7 @@ export default defineConfig({
   component: {
     ...nxComponentTestingPreset(__filename),
     specPattern:[
-      'component/src/**/*.cy.ts'
+      'components/src/**/*.cy.ts'
     ]
   }
 });
