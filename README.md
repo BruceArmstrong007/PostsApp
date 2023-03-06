@@ -1,4 +1,4 @@
-# Akur8
+
 ## Please Read this before Running the Project
 
 ### Steps involved in running this project
