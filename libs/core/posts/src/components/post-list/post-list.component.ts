@@ -63,7 +63,6 @@ export class PostListComponent {
   @Input() type!: string;
   @Input() data!: Observable<any[]>;
   @Input() selectedPost: string | undefined;
-
   filter!: string;
   @Output() cardClick: EventEmitter<any> = new EventEmitter();
 

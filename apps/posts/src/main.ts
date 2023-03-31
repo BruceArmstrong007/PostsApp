@@ -5,7 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { importProvidersFrom } from '@angular/core';
 import { appRoutes } from '@akur8/core/posts';
 
-bootstrapApplication(AppComponent).catch((err) => console.error(err));
 
 bootstrapApplication(AppComponent, {
   providers: [

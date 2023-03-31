@@ -4,7 +4,10 @@
   "license": "MIT",
   "scripts": {
     "serve": "npx nx serve posts",
-    "build": "npx nx build posts"
+    "build": "npx nx build posts",
+    "test-shared": "npx nx component-test shared --watch",
+    "test-core": "npx nx component-test core --watch",
+    "test-e2e": "npx nx e2e posts-e2e --watch"
   },
   "private": true,
   "devDependencies": {
